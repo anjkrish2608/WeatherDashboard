@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div id="container">
+        <div class="row">
+            
+            <div class="col-lg-2">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i
+                            class="fas fa-search"></i></button>
+                </form>
+                <ul class="nav flex-column list-group">
+
+                    <li>
+                        <button class="list-group-item list-group-item-action buttons" value="Sydney">Sydney</button>
+                    </li>
+                    <li>
+                        <button class="list-group-item list-group-item-action buttons" value="Melbourne">Melbourne</button>
+                    </li>
+                    <li>
+                        <button class="list-group-item list-group-item-action buttons" value="Adelaide">Adelaide</button>
+                    </li>
+                    <li>
+                        <button class="list-group-item list-group-item-action buttons" value="Canberra">Canberra</button>
+                    </li>
+                    <li>
+                        <button class="list-group-item list-group-item-action buttons" value="Darwin">Darwin</button>
+                    </li>
+                    <li>
+                        <button class="list-group-item list-group-item-action buttons" value="Tasmania">Tasmania</button>
+                    </li>
+                    <li>
+                        <button class="list-group-item list-group-item-action buttons"  value="Perth">Perth</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="section">
+
+                    <div class="row list-group-item" id="specfic">
+                        <h3 class="city"></h3>                          
+                            <br>
+                            <p class="temp"></p>
+                            <br>
+                            <br>
+                            <p class="tempF"></p>
+                            <br>
+                            <br>
+                            <p class="humidity"></p>
+                            <br>
+                            <br>
+                            <p class="wind"></p>
+                            <br>
+                            <br>
+                            <p class="UV"></p>
+                        <!--closing row  -->
+                    </div>
+                    <div class="row">
+                        <h2>5-Day Forecast</h2>
+                    </div>
+                    <div class="row days">
+                        <!--day1 -->
+                        <div class="card text-white bg-primary mb-3" >
+                            <h5 id="0"></h5>
+                            <i id="icon0"></i>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <br>
+                            <p class="temp0"></p>
+                            <br>
+                            
+                            <p class="tempF0"></p>
+                            <br>
+                            
+                            <p class="humidity0"></p>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- day2 -->
+                        <div class="card text-white bg-primary mb-3" >
+                            <h5 id="1"></h5>
+                            <i id="icon1"></i>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <br>
+                                    <p class="temp1"></p>
+                                    
+                                    <br>
+                                    <p class="tempF1"></p>
+                                   
+                                    <br>
+                                    <p class="humidity1"></p>
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- day3 -->
+                        <div class="card text-white bg-primary mb-3">
+                            <h5 id="2"></h5>
+                            <i id="icon2"></i>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <br>
+                                    <p class="temp2"></p>
+                                    <br>
+                                    
+                                    <p class="tempF2"></p>
+                                    <br>
+                                        <p class="humidity2"></p>
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- day4 -->
+                        <div class="card text-white bg-primary mb-3">
+                            <h5 id="3"></h5>
+                            <i id="icon3"></i>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <br>
+                                    <p class="temp3"></p>
+                                    <br>
+                                    
+                                    <p class="tempF3"></p>
+                                    
+                                    <br>
+                                    <p class="humidity3"></p>
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- day5 -->
+                        <div class="card text-white bg-primary mb-3">
+                            <h5 id="4"></h5>
+                            <i id="icon4"></i>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <br>
+                                    <p class="temp4"></p>
+                                    <br>
+                                
+                                    <p class="tempF4"></p>
+                                
+                                    <br>
+                                    <p class="humidity4"></p>
+                                    </div>
+                            </div>
+                        </div>
+                        <!--closing row -->
+                    </div>
+                    <!--closing section  -->
+                </div>
+                <!--closing col  -->
+            </div>
+
+        </div>
+
+
+
+        <!-- closing container -->
+    </div>
+
+
+
+
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
