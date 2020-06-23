@@ -72,7 +72,7 @@ $(".buttons").on("click", function () {
             var weatherType=(response2.daily[i].weather[0].main);
            
             var iconClass =weatherIcon[weatherType];
-            icon.attr("class",iconClass);
+            icon.attr("class",iconClass+" weather");
            
             //variables to points in HTML
             var temp_i =$(".temp"+i);

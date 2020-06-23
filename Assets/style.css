@@ -19,3 +19,7 @@ h5{
 div#specific.row.list-group-item{
     margin: 10px;
 }
+i.weather{
+    height: 10px;
+    padding-left: 70px;
+}
