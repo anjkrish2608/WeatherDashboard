@@ -3,8 +3,9 @@ header{
     color: whitesmoke;
     font-weight: 700;
 }
-h1{
+h1,h2{
     display: inline-block;
+    padding:20px;
 }
 form{
     padding:15px;
@@ -21,5 +22,6 @@ div#specific.row.list-group-item{
 }
 i.weather{
     height: 10px;
-    padding-left: 70px;
+    float: right;
+    clear: left;
 }
