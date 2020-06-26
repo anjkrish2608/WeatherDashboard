@@ -1,7 +1,7 @@
 //variables
 var APIkey = "2d651d973073a30ce5cf8e74013d0663";
 var city = "";
-var citiesArray = ["Adelaide","Sydney","Melbourne","Perth","Tasmania","Canberra","Brisbane"];
+var citiesArray = ["Adelaide","Sydney","Alice Springs","Perth","Tasmania","Darwin","Brisbane"];
 var queryURL = "";
 var listItemNum=0;
 
@@ -85,7 +85,19 @@ function getCoords() {
             $(".city").html("<h1>" + city + " " + date + "/" + (monthIndex + 1) + "/" + year);
             $(".wind").text("Wind Speed: " + response2.current.wind_speed + " m/s");
             $(".humidity").text("Humidity: " + response2.current.humidity + " %");
-
+            $(".UV").text("UX Index: ");
+            var UVbutton =$("<button>");
+            if(response2.current.uvi<=4){
+              UVbutton.attr("class","btn btn-success");
+            }
+            else if((response2.current.uvi<9)&&(response2.current.uvi>4) ){
+              UVbutton.attr("class","btn btn-warning");
+            }
+            else{
+              UVbutton.attr("class","btn btn-danger");
+            }
+            $(".UV").append(UVbutton);
+            UVbutton.text(response2.current.uvi);
             //weather icon object
             var iconHead = $("<i>");
 

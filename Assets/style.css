@@ -5,7 +5,7 @@ header{
 }
 h1,h2{
     display: inline-block;
-    padding:20px;
+    padding-left:20px;
 }
 form{
     padding:15px;
@@ -15,10 +15,10 @@ form{
     width:10rem;
 }
 h5{
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
 }
 div#specific.row.list-group-item{
-    margin: 10px;
+    margin-bottom: 10px;
 }
 i.weather{
     height: 10px;
