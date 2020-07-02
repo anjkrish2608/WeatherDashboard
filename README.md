@@ -19,7 +19,7 @@ The final product of my website is shown below and can be accessed at [Weather D
 
 ## Challenges faced
 
-Throughout the creation of this website I faced many challenges. The greatest challenge I faced was the search button, due to my error in skim reading I focused majority of my week on the function relating to a premade search history. However as I later found out this search list is meant to accumulate after using the button. 
+Throughout the creation of this website I faced many challenges. The greatest challenge I faced was the search button, due to my error in skim reading I focused majority of my week on the function relating to a premade search history. However as I later found out this search list is meant to accumulate after using the button. Thankfully I have since been able to correct this error at the expense of the search history buttons not functioning.
 
 ## Credits
 
